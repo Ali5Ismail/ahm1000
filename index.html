@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALI.div</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/animate.css">
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navigation">
+        <a href="index.html" class="logo" id="logo"> alidev</a>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">project</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- home page -->
+    <section class="home wow swing"data-wow-duration="3s" id="home">
+      <div class="info">
+        <h2>welcome <br />  iam ali <br>
+           i am javascript developer</h2>
+        <p>you can  view my skills</p>
+        <button class="wow rotateInDownLeft " data-wow-offset="500"><a href="#skills">view</a></button>
+      </div>
+      <div class="img">
+        <img class="wow wobble" data-wow-offset="600" data-wow-duration="3s" src="image/ali.jpg" alt="personal image" />
+      </div>
+    </section>
+    <!-- skills page -->
+   <section class="skills wow rotateIn " data-wow-duration="3s" data-wow-offset="520" id="skills">
+      <h2>my skills</h2>
+
+     <div class="container2">
+      <div class="js"><label for="js" class="label"> javascript</label>
+        <progress class="wow flipInY" data-wow-delay="4s" id="js" max="10" value="5"></progress></div>
+     
+        <div class="js"><label for="js" class="label" > html5</label>
+          <progress class="wow flipInY" data-wow-delay="5s" id="js" max="10" value="9"></progress></div>
+          <div class="js"><label for="js" class="label" >css3</label>
+            <progress class="wow flipInY" data-wow-delay="6s" id="js" max="10" value="8"></progress></div>
+            <div class="js"><label for="js" class="label" >wordpress</label>
+              <progress class="wow flipInY" data-wow-delay="7s" id="js" max="10" value="5"></progress></div> 
+     </div>
+    </section> 
+    <!-- project page -->
+
+    <section class="projects wow slideInLeft" data-wow-duration="1s" data-wow-offset="400" id="projects">
+      <h2>my projects</h2>
+      <div class="container wow slideInLeft" data-wow-duration="2" id="container">
+        <div class="project active wow slideInLeft" data-wow-duration="3s" id="project1">
+          <img src="image/ali.jpg" alt="project1" />
+          <h3>portfolio</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
+          <a href="#">view</a>
+        </div>
+        <div class="project wow slideInLeft" data-wow-duration="3s" id="project2">
+          <img src="image/ali.jpg" alt="project1" />
+          <h3>landig page</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <a href="#">view</a>
+        </div>
+        <div class="project" id="project3">
+          <img src="image/ali.jpg" alt="project1" />
+          <h3>ecomerce</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <a href="#">view</a>
+        </div>
+      </div>
+      <div class="link" id="link">
+        <a class="link1">project1</a>
+        <a class="link2">project2</a>
+        <a class="link3">project3</a>
+      </div>
+    </section>
+    <!-- contact page -->
+    <section class="contact wow hinge"data-wow-offset="500" id="contact">
+      <form novalidate class="userinfo">
+        <input type="text" placeholder="password" />
+        <input type="password" placeholder="password" />
+        <input type="email" placeholder="your email" />
+        <textarea id="text" cols="30" rows="5">what do you need ?</textarea>
+        <input type="submit" class="submit" />
+      </form>
+    </section>
+    <!-- footer part -->
+    <footer class="footer">
+      
+        <p>copyed@alidiv2022</p>
+        <div class="media">
+          <i class="fa-brands fa-facebook-messenger"></i>
+          <i class="fa-brands fa-telegram"></i>
+          <i class="fa-brands fa-whatsapp-square"></i>
+        </div>
+
+    </footer>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+      </script>
+  </body>
+</html>
